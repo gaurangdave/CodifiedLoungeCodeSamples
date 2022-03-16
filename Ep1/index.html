@@ -1,0 +1,124 @@
+<!--
+     The index.html page is the most common name used for the default page shown on a website if no other page is specified when a visitor requests the site. 
+     In other words, index. html is the name used for the homepage of the website.
+-->
+
+
+<!DOCTYPE html>
+<!-- DOCTYPE mentions that the page is an HTML page-->
+<html>
+     <!-- HTML Root element of the page, all the web page content is inside this element. -->
+     <head>
+          <!-- 
+			Everything we want in HTML that is not visible content goes here
+			e.g. metadata, scripts, stylesheets, etc.
+		-->
+
+          <!-- 
+               Defines the title of the page 
+               Title is shows on browser tab and also offered as name when bookmarked
+          -->
+          <title>My First Web Page</title>
+
+          <!-- 
+               Meta tags are used to specify meta data information about the page.
+               We use attributes to specify what kind of the meta data information are we defining
+          -->
+
+          <!-- 
+               This element specifies the document's character encoding — the character set that the document is permitted to use.
+               `utf-8` is a universal character set that includes pretty much any character from any human language.
+          -->
+          <meta charset="utf8"></meta>
+
+          <!-- 
+               Specifying a description that includes keywords relating to the content of your page is useful 
+               as it has the potential to make your page appear higher in relevant searches performed in search engines
+          -->
+          <meta name="description" content="A simple web page">
+          
+          <!-- 
+               This element specifies the document's author.
+               The author's name is shown on the browser tab.
+          -->
+          <meta name="author" content="Gaurang Dave">
+
+          <!--
+               Helps developer control viewport's size and scale for mobile devices
+          -->
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+          <!-- 
+               A way for developers to specify an image that will be used to represent the web site or app on the home screen. 
+          -->
+          <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+
+          <!-- 
+               Defines the relationship between a document and an external resource
+          -->
+          <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+          <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+
+     </head>
+     <body>
+          <!-- 
+               The h1 element is used to indicate the most important (or highest-level) heading on the page
+          -->
+          <h1>Hello I am H1</h1>
+
+          <h2>Hello I am H2</h2>
+
+          <h3>Hello I am H3</h3>
+          <!-- Paragraph -->
+          <p>
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod eros sapien, ut mattis urna vehicula eu. Donec malesuada venenatis nisl eget porttitor. Vestibulum sagittis mauris ex, eu suscipit mi egestas at. Suspendisse vestibulum mauris sed est venenatis, at commodo mi placerat. Praesent porttitor, magna et consectetur ultricies, elit nisi semper dolor, sit amet aliquam sem libero ac purus. Sed pellentesque sit amet libero eget sagittis. Integer facilisis mi odio, vitae scelerisque elit rhoncus et. Morbi at dictum est, quis pharetra erat. Ut elit augue, mattis tempus enim a, vestibulum aliquam nisl.
+          </p>
+
+          <!-- Ordered Lists -->
+          <ol>
+               <li>Item 1</li>
+               <li>Item 2</li>
+               <li>Item 3</li>
+          </ol>
+
+          <!-- Unordered Lists -->
+          <ul>
+               <li>Item 1</li>
+               <li>Item 2</li>
+               <li>Item 3</li>
+          </ul>
+
+          <!-- Definition lists A description list is perfect for defining terms.-->
+          <dl>
+               <dt>HTML</dt>
+               <dd>Hyper Text Transfer Protocol</dd>
+
+               <dt>JS</dt>
+               <dd>Java Script</dd>
+
+               <dt>CSS</dt>
+               <dd>Cascading Style Sheet</dd>
+          </dl>
+
+          <!-- 
+               Paragragh with formatted text
+          -->
+         <p>We are learning <strong>HTML</strong> right now, we will learn CSS <em>after that</em></p>
+
+         
+         <img src="https://images.dog.ceo/breeds/germanshepherd/n02106662_17240.jpg" alt="this is a dog" title="this is a my dog">
+
+         <!-- <video autoplay controls muted>
+          <source src="bbb_sunflower_1080p_60fps_normal.mp4" type="video/mp4">
+         </video> -->
+
+         <a href="helloworld.html" target="_blank">Hello World</a>
+
+         <a href="input.html" target="_blank">Input Form Example</a>
+
+         <a href="mailto:gaurang@example.com" >Email Me</a>
+
+         
+
+     </body>
+</html>

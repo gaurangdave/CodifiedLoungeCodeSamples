@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Input Form</title>
+	</head>
+	<body>
+		<!-- 
+              HTML Forms - used to collect data from users
+         -->
+
+		<h1>HTML Form Example</h1>
+		<form action="/Ep1/input.html" method="get" autocomplete="off">
+			<!--
+               Root form element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.
+          -->
+
+			<!-- 
+               Input type text
+               name attribute specifies the name of the input element sent to the server
+               ID attribute specifies the id of the input element used by client side scripts and CSS to identify the element
+
+               Label
+                tag defines a label for form elements.
+                useful for screen-reader users, because the screen-reader will read out loud the label when the user focus on the input element.
+                The for attribute of the <label> tag should be equal to the id attribute of the <input> element to bind them together.
+          -->
+			<fieldset>
+				<legend>Secure Stuff</legend>
+
+				<label for="name">Name:</label>
+				<input
+					type="text"
+					name="name"
+					placeholder="Enter your name"
+					id="name"
+				/>
+
+				<label for="password">Password:</label>
+				<input
+					type="password"
+					name="password"
+					placeholder="Secret"
+					id="password"
+				/>
+			</fieldset>
+			<br />
+			<br />
+
+			<label for="password">Tell me about your self:</label>
+			<br />
+			<textarea
+				name="description"
+				id="description"
+				rows="10"
+				cols="30"
+			></textarea>
+
+			<!-- Make sure the name values are same-->
+			<p>Are you enjoying the video so far?</p>
+			<input type="radio" id="yes" name="enjoying" value="Yes" />
+			<label for="yes">YES</label><br />
+			<input type="radio" id="no" name="enjoying" value="No" />
+			<label for="no">NO</label><br />
+
+			<p>Is this video useful?</p>
+			<input type="checkbox" id="cb_yes" name="useful" value="Yes" />
+			<label for="cb_yes">YES</label><br />
+			<input type="checkbox" id="cb_no" name="notuserful" value="No" />
+			<label for="cb_no">NO</label><br />
+
+			<p>What would you like to learn next?</p>
+			<select id="topics" name="topics">
+				<!-- by default the first element is always selected
+                         selected attribute is used to specify the default selected option in a select element -->
+				-->
+				<option value="default">Choose One</option>
+				<option value="CSS">Cascading Style Sheet</option>
+				<option value="JS">Java Script</option>
+				<option value="NodeJS">Node JS</option>
+			</select>
+
+			<p>What would you like to learn multiple topics?</p>
+			<select id="multi_topics" name="multi_topics" multiple>
+				<!-- 
+                         use size attribute in select to show how many options to show in the dropdown list
+                    -->
+				<option value="default">Choose Two</option>
+				<option value="CSS">Cascading Style Sheet</option>
+				<option value="JS">Java Script</option>
+				<option value="NodeJS">Node JS</option>
+			</select>
+
+			<h1>A Button</h1>
+
+			<button type="button" onclick="alert('Hello world!')">
+				Click Me!
+			</button>
+
+			<!-- 
+                    Clicking this submits the form
+               -->
+			<button type="submit">Submit</button>
+
+			<!-- 
+                    Clicking this resets the form
+               -->
+			<button type="reset">Reset</button>
+		</form>
+	</body>
+</html>
