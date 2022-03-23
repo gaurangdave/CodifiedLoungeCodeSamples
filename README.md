@@ -14,5 +14,11 @@ Codified Lounge is my Youtube channel where I try to teach and talk to software 
 
 #### Intro to HTML
 
+##### Part 1
 `Video` : https://www.youtube.com/watch?v=9TxICsOUJpI <br/>
+`Examples` : [/WebDevelopmentFundamentals/IntroToHtml](https://github.com/gaurangdave/CodifiedLounge/tree/main/WebDevelopmentFundamentals/IntroToHtml)
+
+
+##### Part 2
+`Video` : https://www.youtube.com/watch?v=gV1qHNwcXc4 <br/>
 `Examples` : [/WebDevelopmentFundamentals/IntroToHtml](https://github.com/gaurangdave/CodifiedLounge/tree/main/WebDevelopmentFundamentals/IntroToHtml)
