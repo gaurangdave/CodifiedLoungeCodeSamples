@@ -1,0 +1,68 @@
+/* CSS Selectors */
+
+
+
+
+
+
+
+/*
+     Attribute Selector
+     Selects the element with given attribute
+     Check browser compatibility : https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors#browser_compatibility
+*/
+input[required] {
+	color: rgb(3, 3, 3);
+	background-color: rgb(191, 209, 218);
+}
+
+/* <a> elements with an href matching "https://example.com" */
+a {
+     color: rgb(3, 3, 3);
+}
+
+a[href="https://example.com"]
+{
+	background-color: beige;
+}
+
+/* <a> elements with an href containing "codified" */
+a[href*="codified"] {
+	font-size: 30px; /* PX in font size is not recommended*/
+}
+
+/* Internal links, beginning with "#" */
+a[href^="#"] {
+	background-color: gold;
+}
+
+/* Links that start with "https" and end in ".org" */
+a[href^="https"] {
+     background-color: rgb(147, 245, 147);
+}
+
+a[href^="https"][href$=".org"] {
+     background-color: rgb(245, 207, 147);
+}
+
+a[class ~= "youtube"] {
+     background-color: red;
+     color: black;
+}
+
+
+/*
+     selector list
+
+*/
+
+p, span, 
+.warning, .error
+{
+     font-weight: bold;
+}
+
+.info {
+     color: blue;
+     background-color: rgb(183, 183, 236);
+}
