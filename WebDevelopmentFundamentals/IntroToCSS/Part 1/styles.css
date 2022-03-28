@@ -1,222 +1,130 @@
-/* CSS Selectors */
-/* 
-     Universal Selector 
-     -- Uncomment to see it in action
-*/
 /* * {
      color: red;
 } */
 
-/*
-     Type Selector
-     Selects the element with given node name
-*/
-
 h1 {
-	color: rgb(56, 63, 167);
-	background-color: lightgray;
+     color: red;
+     background-color: lightgrey;
 }
-
-/*
-     Class Selector
-     Selects the element with given class name
-*/
 
 .a_button {
-	color: rgb(77, 117, 16);
-	background-color: lightgray;
+     color: green;
+     background-color: lightgrey;
 }
 
-/*
-     ID Selector
-     Selects the element with given id
-*/
-
-#avengers_assemble {
-	color: rgb(19, 18, 18);
-	background-color: rgb(238, 75, 75);
-	height: 100px;
-	width: 200px;
+#assemble_button {
+     color: red;
+     background-color: lightgrey;
 }
 
-/*
-     Attribute Selector
-     Selects the element with given attribute
-     Check browser compatibility : https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors#browser_compatibility
-*/
-
-a {
-	color: black;
-	background-color: lightgray; /* default style */
+.notification {
+     font-weight: bold;
 }
-
-/* <a> elements with an href containing "a[href*="index"] */
-a[href*="index"] {
-	background-color: aquamarine;
-}
-
-a[href="missions.html"] {
-	background-color: rgb(167, 245, 144);
-}
-
-/* Internal links, beginning with "#" */
-a[href^="#"] {
-	background-color: gold;
-}
-
-/* Links that start with "https" and end in ".org" */
-a[href^="https"] {
-	background-color: red;
-}
-
-a[href^="https"][href$=".org"] {
-	background-color: rgb(240, 152, 10);
-}
-
-a[class~="certified"] {
-	background-color: rgb(0, 255, 13);
-	color: black;
-}
-
-input[required] {
-	color: rgb(3, 3, 3);
-	background-color: rgb(191, 209, 218);
-}
-
-/*
-     selector list
-     grouping method that selects all the matching nodes.
-*/
-
-p,
-span {
-	font-weight: bold;
-	color: black;
-}
-
 .warning {
-	background-color: rgb(233, 233, 164);
-}
-.info {
-	background-color: rgb(111, 202, 245);
+     background-color: yellow;
 }
 
 .error {
-	background-color: rgb(255, 0, 0);
+     background-color: rgb(243, 136, 136);
 }
 
-/*
-     Descendant combinator
-     combines two selectors such that elements matched by the second selector are 
-     selected if they have an ancestor (parent, parent's parent, parent's parent's parent, etc) 
-     element matching the first selector
-*/
+.info {
+     background-color: rgb(120, 213, 241);
+}
+
+a[href*="index.html"] {
+     background-color: lightblue;
+}
+
+a[href="missions.html"] {
+     background-color: greenyellow;
+}
+
+a[href^="my_"]{
+     background-color: aquamarine;
+}
+
+a[href^="https:"] {
+     background-color: rgb(243, 152, 152);
+}
+
+a[href^="https:"][href$=".org"] {
+     background-color: rgb(173, 243, 152);
+}
+
+a[href^="https:"][class~="codified"] {
+     background-color: rgb(173, 243, 152);
+}
+
+input[required] {
+     background-color: rgb(247, 169, 169);
+}
+
+p, span {
+     color: rgb(25, 126, 156);
+}
 
 ul.iron_man a {
-	background-color: gold;
-	color: red;
+     background-color: gold;
+     color: red;
 }
 
-ul p {
-	font-weight: normal;
+ul.captain_america a {
+     background-color: lightblue;
+     color: white;
 }
 
-ul.captain a {
-	background-color: #002d5c;
-	color: #f0f0f0;
-}
-
-/*
-     Child combinator
-     The > combinator selects nodes that are direct children of the first element. 
-*/
-
-ul.iron_man > li {
-	list-style-type: none;
-}
-
-ul.captain > li {
-	list-style-type: none;
-}
-
-/* 
-ul.iron_man, ul.captain > li {
+ul.iron_man > li, ul.captain_america > li {
      list-style-type: none;
-} */
+}    
 
-/*
-general sibling combinator (~) separates two selectors and matches all iterations of the second element,
-that are following the first element (though not necessarily immediately), and are children of
-*/
-
-input[type="radio"] ~ p {
-	visibility: hidden;
+.team ~ p {
+     visibility: hidden;
 }
 
-/*
-     pseudo-class 
-     keyword added to a selector that specifies a special state of the selected element(s). 
-*/
 
 a:hover {
-	font-size: 30px;
+     font-size: 25px;
 }
 
 a:visited {
-	background-color: black;
-}
-
-input[type="text"]:focus {
-	background-color: rgb(255, 255, 255);
+     background-color: black;
 }
 
 input[type="button"]:active {
-	background-color: rgb(255, 255, 255);
+     background-color: white;
 }
 
-input[type="radio"]:checked ~ p {
-	visibility: visible;
+input[type="text"]:focus {
+     background-color: white;
 }
 
-/* input[type="radio"]#team_captain:checked ~ p#captain_recruit {
-     visibility: visible;
-}
-
-input[type="radio"]#team_iron_man:checked ~ p#iron_man_recruit {
-     visibility: visible;
+/* .team:checked ~ p {
+     visibility:visible;
 } */
 
-input[type="radio"].teams:disabled ~ label {
-	text-decoration: line-through;
-	/* text-decoration-line: line-through; */
+#team_captain:checked ~ p#captain_america_recruit {
+     visibility:visible;
 }
 
-/*
-pseudo-element is a keyword added to a selector that lets you style a specific part of the selected element(s)
-*/
+#team_iron_man:checked ~ p#iron_man_recruit {
+     visibility:visible;
+}
 
-/* The first line of every <p> element. */
 .pseudo_element_example p::first-line {
-	color: blue;
-	text-transform: uppercase;
-}
-
-
-.pseudo_element_example a::after {
-     content: "<- Boring";
-     color: red;
-     font-weight: bold;
+     background-color: yellow;
 }
 
 .pseudo_element_example p::first-letter {
-	color: rgb(207, 7, 7);
-     font-size: 150%;
+     text-transform: uppercase;
 }
 
 .pseudo_element_example p::selection {
-	color: rgb(252, 2, 2);
-     background-color: rgb(17, 17, 17);
-     font-size: 3000%;
+     background-color: orange;
 }
 
+a[href="dc_comics.html"]::after {
+     content: "<- BORING!!";
+     color: red;
+}
 

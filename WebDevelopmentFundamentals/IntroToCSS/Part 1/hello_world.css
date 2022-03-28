@@ -1,7 +1,9 @@
-/*
-     This is a comment in CSS file
-*/
+/* Example of internal CSS */
 h3 {
-     color: orange; /* This is also a comment */
-     background-color: lightgray;
+	color: red; /* Example of foreground color */
+	background-color: lightgrey; /* Example of background color */
+}
+
+p {
+     color: green;
 }

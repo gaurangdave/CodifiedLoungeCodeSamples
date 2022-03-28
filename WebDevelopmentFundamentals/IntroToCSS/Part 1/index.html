@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 		<link rel="stylesheet" href="styles.css" />
 		<title>Avengers Initiative</title>
 	</head>
@@ -20,10 +21,16 @@
 					<a href="missions.html">Missions</a>
 				</li>
 				<li>
+					<a href="my_missions.html">My Missions</a>
+				</li>
+				<li>
 					<a href="updates.html">Updates</a>
 				</li>
 				<li>
-					<a href="signup.html">Sign Up</a>
+					<a href="my_updates.html">My Updates</a>
+				</li>
+				<li>
+					<a href="signup.html">Signup</a>
 				</li>
 				<li>
 					<a href="https://www.google.com">Research</a>
@@ -32,63 +39,65 @@
 					<a href="https://wikipedia.org">Data</a>
 				</li>
 				<li>
-					<a href="https://www.codifiedlounge.dev" class="certified"
+					<a href="https://codifiedlounge.dev" class="codified"
 						>Technology</a
 					>
-				</li>
-				<li>
-					<a href="#para_to_link">Quote of the day</a>
 				</li>
 			</ul>
 		</nav>
 		<main>
 			<input type="text" placeholder="Super Hero Name" required />
-			<input
-				type="button"
-				id="roll_call"
-				value="Roll Call"
-				class="a_button"
-			/>
+			<input type="button" value="Roll Call" class="a_button" />
 
+			<input type="button" value="On Leave" class="a_button" />
 			<br />
 			<br />
+
 			<input
 				type="button"
-				id="avengers_assemble"
 				value="Avengers Assemble"
+				id="assemble_button"
 			/>
 
-			<span class="error">this is a error</span>
-			<span class="warning">this is a warning</span>
-			<span class="info">this is a info</span>
-			<p>message in a paragraph</p>
+			<aside class="notification warning">
+				<span>This is a warning</span>
+			</aside>
 
-			<div>message in a div</div>
+			<aside class="notification error">
+				<span>This is a error</span>
+			</aside>
 
-			<input type="button" value="Issue Warning" class="warning" />
+			<aside class="notification info">
+				<span>This is a info</span>
+			</aside>
 
-			<h2>Intel Civil War</h2>
+			<input type="button" class="warning" value="Issue Warning" />
+
+			<p>
+				Avegners Initiative is a mind blowing initiative from the minds
+				of Nick Fury
+			</p>
+
+			<span>The name was Captan Marvel's Idea</span>
+
+			<h2>Civil War Intel</h2>
+
 			<h3>Team Iron Man</h3>
+
 			<ul class="iron_man">
 				<li>
 					<a href="iron_man.html">Iron Man</a>
 					<ol>
-						<li>
-							Wanted to sign the
-							<a href="accords.html">Sokovia Accords</a>.
-						</li>
-						<li>Wanted to avenge his parents.</li>
-						<li>Wanted to protect his friends.</li>
+						<li>Wanted to sign <a href="sokovia_accords.html">Sokovia Accords</a>.</li>
+						<li>Wanted avenge his parents.</li>
+						<li>Wanted to keep his friends safe.</li>
 					</ol>
 				</li>
 				<li>
-					<a href="james_rodes.html">James Rhodes</a>
+					<a href="james_rhodes.html">James Rhodes</a>
 				</li>
 				<li>
-					<a href="natasha_romanov.html">Natasha Romanov</a>
-				</li>
-				<li>
-					<a href="black_panther.html">Black Panther</a>
+					<a href="natasha.html">Natasha Romonov</a>
 				</li>
 				<li>
 					<a href="spider_man.html">Spider Man</a>
@@ -96,69 +105,53 @@
 			</ul>
 
 			<h3>Team Captain America</h3>
-			<ul class="captain">
+
+			<ul class="captain_america">
 				<li>
 					<a href="captain_america.html">Captain America</a>
 					<ol>
-						<li>
-							Didn't want to sign the
-							<a href="accords.html">Sokovia Accords</a>.
-						</li>
-						<li>
-							Wanted to save his friend bucky because he was
-							innocent
-						</li>
-						<li>Wanted to protect his country.</li>
+						<li>Didn't want to sign<a href="sokovia_accords.html">Sokovia Accords</a>.</li>
+						<li>Wanted to keep bucky safe.</li>
+						<li>Wanted to keep his friends safe.</li>
 					</ol>
 				</li>
 				<li>
 					<a href="buckey_barnes.html">Bucky Barnes</a>
 				</li>
 				<li>
-					<a href="clint_barton.html">Clint Barton - The Hackeye</a>
-				</li>
-				<li>
-					<a href="sam_wildon.html">Sam Wilson - The Falcon</a>
+					<a href="clint_barton.html">Clint Barton</a>
 				</li>
 				<li>
 					<a href="ant_man.html">Ant Man</a>
 				</li>
 			</ul>
 
+               <h3>Civil War Recruitment</h3>
+               <section class="recruitement">
+                    <p>Whose team are you in?</p>
 
-			<h3>Civil War Recruitment</h3>
-			<section>
-				<p>Whose team are you in?</p>
-				
-				<input type="radio" name="civil_war_team" id="team_captain" value="team_captain" class="teams">
-				<label for="team_captain">Captain America</label>
+                    <input type="radio" name="civil_war_team" id="team_captain" value="team_captain" class="team">
+                    <label for="team_captain">Captain America</label>
 
-				<input type="radio" name="civil_war_team" id="team_iron_man" value="team_iron_man" class="teams">
-				<label for="team_captain">Iron Man</label>
+                    <input type="radio" name="civil_war_team" id="team_iron_man" value="team_iron_man" class="team">
+                    <label for="team_iron_man">Iron Man</label>
 
-				<p>Congratulations you are recruited!</p>
-
-				<!-- <p id="iron_man_recruit">Congratulations you are in the right team! Tony Stark welcomes you!</p>
-				<p id="captain_recruit">Congratulations you are in the right team! Steve Rogers welcomes you!</p> -->
-			</section>
-
-			<section class="pseudo_element_example">
-				<p>
-					Civil war is boring
-				</p>
-
-				
-
-				<a href="dc_comics.html" >I don't like Marvel</a>
-			</section>
+                    <!-- <p>Congratulations you are recruited!</p> -->
+                    <p id="iron_man_recruit">Congratulations on joning team ironman</p>
+                    <p id="captain_america_recruit">Congratulations on joning team captain america</p>
+               </section>
 
 
-			<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-			<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-			<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-			<p id="para_to_link">Make it work, make it better, make it fast</p>
+               <section class="pseudo_element_example">
+                    <p>
+                         lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce libero enim, ultricies sit amet lacinia at, faucibus sit amet nisi. Integer et sem sollicitudin risus iaculis volutpat. Sed hendrerit lorem ac lobortis commodo. Maecenas imperdiet et arcu vitae vulputate. Proin quis mauris at sem volutpat finibus. Praesent et dui lobortis, ultrices risus in, consequat mi. In rutrum suscipit arcu, non convallis dolor volutpat laoreet.
+                    </p>
+
+                    <p>
+                         nam et quam augue. Vestibulum dapibus turpis malesuada ipsum ultrices, in pellentesque purus accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi pharetra viverra viverra. Donec vitae euismod orci. Nullam pellentesque eget arcu placerat hendrerit. Donec pretium dui id odio ullamcorper dignissim. Quisque interdum, odio quis dapibus vulputate, leo tellus rutrum lorem, eu iaculis turpis lorem non lorem. Suspendisse ultricies semper mauris eu viverra. Sed egestas nunc id dolor cursus, a ullamcorper diam consequat. Nullam non tempor ex. Maecenas elementum dapibus dolor, in laoreet ante placerat sit amet. Etiam finibus tortor est, quis varius leo efficitur sed. Donec sit amet suscipit dolor, et pulvinar enim.
+                    </p>
+                    <a href="dc_comics.html">I am leaving Marvel Universe</a>
+               </section>
 		</main>
-
-		<footer></footer>
 	</body>
 </html>
