@@ -1,0 +1,20 @@
+.css_box_model p{
+     background-color: cyan;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     padding-left: 10px;
+     padding-right: 10px;
+     /* Short hand */
+     /* padding: 10px; */
+     border: 1px solid black;
+}
+
+.css_box_model {
+     background-color: red;
+     padding: 10px;
+     border: 12px solid rgb(217, 240, 12);
+}
+
+.seond_para {
+     margin-top:20px;
+}
