@@ -1,20 +1,35 @@
-.css_box_model p{
-     background-color: cyan;
-     padding-top: 10px;
-     padding-bottom: 10px;
-     padding-left: 10px;
-     padding-right: 10px;
-     /* Short hand */
-     /* padding: 10px; */
-     border: 1px solid black;
-}
-
 .css_box_model {
      background-color: red;
-     padding: 10px;
-     border: 12px solid rgb(217, 240, 12);
+     padding:1px;
+     margin-bottom: 20px;
 }
 
-.seond_para {
-     margin-top:20px;
+.css_box_model_para {
+     width: 50%;
+     background-color: yellow;
+     /* padding-top:20px;
+     padding-bottom:20px;
+     padding-left: 10px;
+     padding-right: 10px; */
+     padding: 10px 15px;
+     border: 10px green solid;
+     /* border-style: solid;
+     border-color: green; */
+}
+
+.second_para {
+     margin-top: 10px;
+     margin-left:10px;
+     margin-right:10px;
+     margin-bottom: 10px;
+}
+
+.css_box_model_span {
+     background-color: yellow;
+     padding:10px;
+     border: 10px green solid;
+     margin-left:10px;
+     margin-right:10px;
+     margin-top: 10px;
+     margin-bottom: 10px;
 }

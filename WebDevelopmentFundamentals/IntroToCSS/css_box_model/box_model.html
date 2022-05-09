@@ -4,41 +4,53 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
      <link rel="stylesheet" href="box_model.css">
      <title>CSS Basics</title>
 </head>
 <body>
      <h1>CSS Basics</h1>
-     <!-- 
-          Block Element vs Inline element
-     -->
 
-     <!-- Examples of block element -->
-     
-     <h2>I am a H2</h2>
-     <p>I am a paragraph</p> <p>I am another paragraph</p>
-     
-     <article>
-          this is a long article
-     </article>
+     <h2>I am a h2</h2>
+     <p style="width:500px;">I am a paragraph</p>
+     <p>I am second paragraph</p>
 
-     <!-- Examples of inline element element -->
+
      <span>I am a span</span>
-     <a href="http://example.com">I am an anchor tag</a>
+     <a href="http://example.com">I am a link</a>
+     <a href="http://example.com">I am second link</a>
 
-     <code>this is code tag</code>
-     <code>this is another code tag</code>
 
-     <!-- CSS Box Model -->
+     <p style="background-color: yellow;">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt eleifend odio, ut mollis velit accumsan eget. Quisque nisl nisi, tincidunt ac venenatis nec, consectetur in sapien. Cras rutrum, nibh ac sodales bibendum, enim odio accumsan tellus, id maximus risus quam quis sem. Morbi venenatis fermentum auctor. Etiam tristique ex in nisl feugiat dapibus ac et neque. Vestibulum rutrum malesuada tempor. Aliquam laoreet egestas ultrices. Donec interdum vitae diam et faucibus. Cras lacinia erat sit amet ipsum tristique finibus. Suspendisse cursus accumsan justo, sed tempus leo viverra non. Integer mattis venenatis diam, ut ultrices eros vestibulum non. Etiam congue eleifend augue et vulputate. Curabitur in sapien malesuada, facilisis nulla quis, luctus eros. Donec enim tortor, gravida at felis a, pharetra imperdiet ante.
+     </p>
+
+     <span style="background-color: yellow;">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt eleifend odio, ut mollis velit accumsan eget. Quisque nisl nisi, tincidunt ac venenatis nec, consectetur in sapien. Cras rutrum, nibh ac sodales bibendum, enim odio accumsan tellus, id maximus risus quam quis sem. Morbi venenatis fermentum auctor. Etiam tristique ex in nisl feugiat dapibus ac et neque. Vestibulum rutrum malesuada tempor. Aliquam laoreet egestas ultrices. Donec interdum vitae diam et faucibus. Cras lacinia erat sit amet ipsum tristique finibus. Suspendisse cursus accumsan justo, sed tempus leo viverra non. Integer mattis venenatis diam, ut ultrices eros vestibulum non. Etiam congue eleifend augue et vulputate. Curabitur in sapien malesuada, facilisis nulla quis, luctus eros. Donec enim tortor, gravida at felis a, pharetra imperdiet ante.
+     </span>
+
      <h2>CSS Box Model</h2>
 
      <div class="css_box_model">
-          <p>This is a paragraph inside a div</p>
+          <p class="css_box_model_para">
+               This is a paragraph inside a div
+          </p>
 
-          <p class="seond_para">This is second paragraph inside a div</p>
+          <p class="css_box_model_para second_para">
+               This is second paragraph inside a div
+          </p>
      </div>
 
-     
+
+     <div class="css_box_model">
+          <span class="css_box_model_span">
+               this is a span inside div
+          </span>
+
+          <span class="css_box_model_span">
+               this is second span inside div
+          </span>
+     </div>
+
+
 </body>
 </html>
