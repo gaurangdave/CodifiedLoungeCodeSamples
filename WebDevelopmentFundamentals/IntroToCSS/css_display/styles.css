@@ -1,0 +1,63 @@
+.myspan {
+	background-color: yellow;
+	margin-bottom: 10px;
+
+	height: 100px;
+	width: 500px;
+	
+	display: block;
+}
+
+.mydiv {
+	background-color: yellow;
+	height: 50px;
+	width: 300px;
+	
+	display: inline;
+}
+
+.mypara {
+	background-color: yellow;
+	display: inline-block;
+
+	height: 50px;
+	width: 150px;
+}
+
+.mysecondspan {
+	background-color: yellow;
+	display: inline-block;
+
+	height: 50px;
+	width: 150px;
+}
+
+.table {
+	display: table;
+	padding: 5px;
+}
+.table_row {
+	display: table-row;
+	padding: 5px;
+}
+.table_cell {
+	display: table-cell;
+	padding: 5px;
+	border: #000000 solid 1px;
+}
+
+.inline_table {
+	display: inline-table;
+	padding: 5px;
+}
+
+.list_item {
+	display: list-item;
+	list-style: circle inside;
+}
+
+.invisible {
+	background-color: yellow;
+
+	display: none;
+}
